@@ -9,6 +9,7 @@ header  a{
     text-decoration: none;
     color: white;
     margin: 10px;
+    font-weight: bold;
 }
 
 a{
@@ -22,7 +23,7 @@ img{
 }
 
 header{
-    background-color: #000030;
+    background-color: #012030;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -73,6 +74,7 @@ nav {
     text-align: center;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);   
     transition: transform 0.3s ease;
+
 }
 
 .caixa:hover{
@@ -93,3 +95,31 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+#ajuda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    background-color: #13678A;
+    color: white;
+}
+
+#ajuda h2{
+    width: 190px;
+    height: 40px;
+    border-radius: 15px;
+    padding: 4px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid;
+}
+
+#ajuda h2:hover{
+    background-color: #45C4B0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
