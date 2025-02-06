@@ -117,13 +117,14 @@ nav {
 
 
 #ajuda h2{
-    width: 190px;
-    height: 40px;
+    width: 180px;
+    height: auto;
     border-radius: 15px;
     padding: 4px;
     text-align: center;
     align-items: center;
     border: 1px solid;
+    font-size: 20px;
 }
 #ajuda h2:hover{
     background-color: #45C4B0;
