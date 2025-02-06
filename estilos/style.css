@@ -35,12 +35,12 @@ header{
     justify-content: space-around;
     height: 80px;
     z-index: 1000;
-    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.822);
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.726);
 }
 
 nav {
     display: flex;
-    gap: 0; 
+    gap: 0;     
 }
 
 .header, .nav-menu {
@@ -62,6 +62,7 @@ nav {
     text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
+    
 }
 
 #serviços > h3{
@@ -72,15 +73,20 @@ nav {
     flex-wrap: wrap; 
     border: 1px solid #f2f0e5;
     background-color: #faf7f5;
-    width: 360px;
+    width: 400px;
     height: 200px;
     padding: 20px;
     margin: 20px;
     text-align: center;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.212);   
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.192);   
     transition: transform 0.3s ease;
-
+    border-radius: 10px;
 }
+
+.caixa h2{
+    margin-bottom: 20px;
+}
+
 .caixa:hover{
     transform: scale(1.05);
 }
@@ -106,9 +112,9 @@ nav {
     gap: 20px;
     background-color: #13678A;
     color: white;
-    box-shadow:  1px 1px 3px rgba(0, 0, 0, 0.555);
-    
+    box-shadow:  1px 1px 10px #13668a6e;
 }
+
 
 #ajuda h2{
     width: 190px;
@@ -195,12 +201,8 @@ nav {
     background-color: #13678A;
     transition: 0.3s;
     cursor: pointer;
+    
 }
-
-#saiba-mais:hover{
-    color: white;
-}
-
 
 .footer-container {
     background-color: #2c3e50;
