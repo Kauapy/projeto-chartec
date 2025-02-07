@@ -130,6 +130,7 @@ nav {
     background-color: #1d2031;
     transition: 0.3s;
     cursor: pointer;
+
 } 
 #biografia{
     display: flex;
@@ -146,7 +147,6 @@ nav {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    display: flex;
     gap: 24px;
     align-items: flex-start;
     margin: 50px;
@@ -159,8 +159,8 @@ nav {
     align-items: flex-start;
     justify-content: center;
     overflow: hidden;
-    flex-shrink: 0;
-    margin-top: 40px;
+    position: relative;
+    left: 40%;
 }
 .profile-image img {
     width: 100%;
@@ -171,9 +171,15 @@ nav {
     text-align: center;
     object-fit: contain;
 }
+
+.profile-image{
+    margin-top: 30px;
+}
+
 .content {
     position: relative;
     top: 30px;
+    margin-bottom: 30px;
 }
 
 .text {
@@ -328,20 +334,37 @@ nav {
         justify-content: center;
         position: relative;
         bottom: 50px;
-        left: 70px;
+        left: 120px;
     }
 
     .text{
         display: flex;
+        width: 400px;
+        font-size: 20px;
+    }
+
+    #content{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
+
     header a{
         font-size: 14px;
     }
 
     #botoes{
         width: 140px;
+    }
+
+    #serviços h1{
+        width: 500px;
+        font-size: 35px;
+    }
+
+    #serviços h3{
+        width: 400px;
     }
   }
 
