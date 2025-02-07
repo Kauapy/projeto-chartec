@@ -110,9 +110,9 @@ nav {
     align-items: center;
     padding: 30px;
     gap: 20px;
-    background-color: #13678A;
+    background-color: #10516d;
     color: white;
-    box-shadow:  1px 1px 10px #13668a6e;
+    box-shadow:  1px 1px 10px #13668a2c;
 }
 
 
@@ -127,7 +127,7 @@ nav {
     font-size: 20px;
 }
 #ajuda h2:hover{
-    background-color: #45C4B0;
+    background-color: #1d2031;
     transition: 0.3s;
     cursor: pointer;
 } 
@@ -299,6 +299,51 @@ nav {
         justify-content: center;
     }
 }
+
+@media screen and (max-width: 600px) {
+    #ajuda h1 {
+      font-size: 20px; 
+    }
+
+    #ajuda h2{
+        font-size: 17px;
+    }
+
+    #ajuda h3{
+        font-size: 16px;
+    }
+
+    #biografia h1{
+        font-size: 21px;
+    }
+
+    #biografia h2{
+        font-size: 17px;
+        width: 500px;
+        text-align: center;
+    }
+
+    .profile-image{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 50px;
+        left: 70px;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header a{
+        font-size: 14px;
+    }
+
+    #botoes{
+        width: 140px;
+    }
+  }
 
 .logo{
     width: 50px;
