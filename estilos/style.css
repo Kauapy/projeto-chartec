@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 header  a{
     text-decoration: none;
     color: white;
@@ -17,6 +18,8 @@ a{
     text-decoration: none;
     color: black;
 }
+
+
 
 img{
     height: 90px;
@@ -40,7 +43,12 @@ header{
 
 nav {
     display: flex;
-    gap: 0;     
+    gap: 10px;   
+}
+
+nav a{
+    position: relative;
+    padding: 6px 0;
 }
 
 .header, .nav-menu {
@@ -48,10 +56,21 @@ nav {
     margin: 0;
 }
 
-.link:hover{
-    opacity: 0.5;
-    transition: 0.3s;
+nav a::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background-color: white;
+    transition: all 0.4s ease;
 }
+
+nav a:hover:before{
+    width: 100%;
+}
+
 
 #serviços{
     display: flex;
@@ -78,7 +97,7 @@ nav {
     padding: 20px;
     margin: 20px;
     text-align: center;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.192);   
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.062);   
     transition: transform 0.3s ease;
     border-radius: 10px;
 }
@@ -161,6 +180,7 @@ nav {
     overflow: hidden;
     position: relative;
     left: 40%;
+    bottom: 40px;
 }
 .profile-image img {
     width: 100%;
