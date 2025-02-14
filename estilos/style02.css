@@ -4,6 +4,7 @@ body{
     background-color: #F5F5F5;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -228,6 +229,11 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
+    padding-top: 30vh;
+    gap: 20px;
 }
 
 .modificador{
@@ -247,8 +253,75 @@ hr{
 
 .modificador p{
     font-size: large;
+    padding-bottom: 16px;
+    display: inline-block;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.cor-design{
+    color: #3498db;  /* #3CA6A6 #0FC2C0 Testar cores */
+    font-weight: bold;
     
 }
 
+.espaçamento{
+    margin-bottom: 27px;
+}
 
 
+.espaçamento2{
+    margin-bottom: 28px;
+
+}
+@media (max-width: 768px) {
+    #section-main {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .modificador {
+        margin-bottom: 20px; 
+        
+    }
+}
+
+
+.fale-conosco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+
+
+.botao02{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    width: 160px;
+    height: 27px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ajuda02{
+    margin-top: 20px;
+}
+
+.botao02:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
