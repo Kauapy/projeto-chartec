@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a{
+  text-decoration: none;
+
+}
+
 header h1{
   color: #808080;
   letter-spacing: 2px;
@@ -12,6 +17,7 @@ header h1{
   line-height: 50px;
   margin-left: 80px;
   margin-top: 80px;
+  color: white;
 }
 
 header p{
@@ -22,10 +28,11 @@ header p{
   margin-top: 20px;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 #link-home a{
-  border: 2px solid black;
+  border: 2px solid white;
   width: 100px;
   font-weight: bolder;
   border-radius: 5px;
@@ -37,7 +44,7 @@ header p{
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -45,3 +52,82 @@ header p{
   transform: translateY(-5px); 
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
+body{
+  background-image: url("/imagens/istockphoto-1186079169-612x612.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: -1; 
+}
+
+
+.servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 50px 80px;
+  margin-top: 100px;
+}
+
+.card-servico {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-servico:hover {
+  transform: translateY(-10px);
+}
+
+.card-servico img {
+  width: 60px;
+  margin-bottom: 20px;
+  filter: invert(1);
+}
+
+.card-servico h3 {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.card-servico p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .servicos {
+      padding: 30px 20px;
+      grid-template-columns: 1fr;
+  }
+  
+  header h1 {
+      font-size: 30px;
+      margin-left: 20px;
+  }
+  
+  header p {
+      width: auto;
+      margin: 20px;
+      font-size: 14px;
+  }
+}
+
