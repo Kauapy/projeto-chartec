@@ -393,3 +393,37 @@ nav a:hover:before{
    position: relative;
    bottom: 15px;
 }
+
+.fas.fa-envelope::before {
+  content: ""; 
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  background-image: url("/imagens/message.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  margin-top: 4px;
+}
+
+
+.fas.fa-phone::before{
+  content: ""; 
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  background-image: url("/imagens/phone-call.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  margin-top: 4px;
+}
+
+.fas.fa-map-marker-alt{
+  content: ""; 
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  background-image: url("/imagens/place-localizer.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  margin-top: 4px;
+}

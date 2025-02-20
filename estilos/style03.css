@@ -1,3 +1,5 @@
+@import url(https://db.onlinewebfonts.com/c/d7e8a95865396cddca89b00080d2cba6?family=SoDo+Sans+SemiBold);
+
 *{
   margin: 0;
   padding: 0;
@@ -28,13 +30,14 @@ body{
 header h1{
   color: #808080;
   letter-spacing: 2px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "SoDo Sans SemiBold";
   font-weight: lighter;
   font-size: 40px;
   line-height: 50px;
   margin-left: 80px;
   margin-top: 80px;
   color: white;
+
 }
 
 header p{
@@ -98,6 +101,7 @@ body::after {
   padding: 30px;
   transition: transform 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.2);
+  
 }
 
 .card-servico:hover {
@@ -145,7 +149,8 @@ body::after {
 
 #informaçoes{
   margin-top: 500px;
-  
+  scroll-margin-top: 500px;
+  font-family: "SoDo Sans SemiBold";
 }
 
 
@@ -192,16 +197,19 @@ body::after {
   border-left: 4px solid #ffffff;
   padding-left: 10px;
   height: 50px;
+  position: relative;
+  right: 20px;
 }
 
 #info4{
-  margin-top: 400px;
+  margin-top: 600px;
   border-left: 4px solid #ffffff;
   padding-left: 10px;
   height: 50px;
   position: relative;
   right: 30px;
 }
+
 
 button {
   font-size: 30px;  
@@ -226,6 +234,13 @@ button {
   left: 220px;
 }
 
+.seta-topo3{
+  position: absolute;
+  left: 260px;
+  bottom: 5px;
+  top: -10px;
+}
+
 
 .cabeçalho a{
   color: white;
@@ -240,7 +255,7 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 20px;
+  gap: 30px;
   margin-top: 30px;
 }
 
@@ -268,4 +283,148 @@ button {
 .link-home:hover::before {
   left: 50%;
   transform: translateX(-50%);
+}
+
+.footer-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 2500px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px; 
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  color: #ecf0f1;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 0.95em;
+  color: #bdc3c7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-list {
+  list-style: none;
+}
+
+.contact-list li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-list i {
+  color: #3498db;
+  font-size: 1.2em;
+
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #3498db;
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.3); 
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer-bottom p {
+  font-size: 0.9em;
+  color: #7f8c8d;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-section h3{
+  font-family: "SoDo Sans SemiBold";
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .social-links {
+      justify-content: center;
+  }
+
+  .contact-list li {
+      justify-content: center;
+  }
+
+  #texto h2{
+      font-size: 18px;
+      text-align: center;
+  }
+}
+
+.fas.fa-envelope::before {
+  content: ""; 
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  background-image: url("/imagens/message.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  margin-top: 4px;
+}
+
+
+.fas.fa-phone::before{
+  content: ""; 
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  background-image: url("/imagens/phone-call.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  margin-top: 4px;
+}
+
+.fas.fa-map-marker-alt{
+  content: ""; 
+  display: inline-block;
+  width: 25px; 
+  height: 25px;
+  background-image: url("/imagens/place-localizer.png");
+  background-size: contain; 
+  background-repeat: no-repeat;
+  margin-top: 4px;
 }
