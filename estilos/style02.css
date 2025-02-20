@@ -14,8 +14,7 @@ header a{
 
 }
 
-#link-home a{
-    border: 2px solid black;
+.link-home a{
     width: 100px;
     font-weight: bolder;
     border-radius: 5px;
@@ -25,13 +24,10 @@ header a{
     margin: 0 auto;
     margin-top: 40px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
-#link-home a:hover{
-    transform: translateY(-5px); 
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-}
+
 
 #titulo{
     display: flex;
@@ -336,4 +332,40 @@ hr{
     right: 2px;
     content: url('/imagens/comment-alt.png');
     width: 20px;
+}
+
+
+.cabeçalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.link-home {
+    position: relative; 
+    cursor: pointer;
+}
+
+.link-home::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    margin-bottom: -5px;
+    background-color: #012030;
+    transition: all 0.3s ease;
+}
+
+.link-home:hover::before {
+    width: 80%;
+}
+
+.link-home:hover::before {
+    left: 50%;
+    transform: translateX(-50%);
 }
