@@ -283,6 +283,10 @@ hr{
         margin-bottom: 20px; 
         
     }
+
+    body{
+        overflow-x: hidden;
+    }
 }
 
 

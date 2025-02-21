@@ -10,6 +10,10 @@ a{
 
 }
 
+body{
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -229,10 +233,28 @@ button {
   left: 275px;
 }
 
+.seta-topo2:hover{
+  color: #7f8c8d;
+  transition: 0.5s;
+}
+
+
 .seta-topo4{
   position: relative;
   left: 220px;
 }
+
+.seta-topo4:hover{
+  color: #7f8c8d;
+  transition: 0.5s;
+}
+
+.seta-topo3:hover{
+  color: #7f8c8d;
+  transition: 0.5s;
+}
+
+
 
 .seta-topo3{
   position: absolute;
@@ -418,6 +440,8 @@ button {
   margin-top: 4px;
 }
 
+
+
 .fas.fa-map-marker-alt{
   content: ""; 
   display: inline-block;
@@ -428,3 +452,138 @@ button {
   background-repeat: no-repeat;
   margin-top: 4px;
 }
+
+
+
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  
+  header p {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .servicos {
+    padding: 30px 40px;
+  }
+  
+  #info1 p,
+  #info2 p,
+  #info3 p,
+  #info4 p {
+    width: 90%;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  header p {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 13px;
+  }
+  
+  .cabeçalho {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .servicos {
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  #informaçoes {
+    margin-top: 300px;
+  }
+  
+  #info1,
+  #info2,
+  #info3,
+  #info4 {
+    margin-left: 20px;
+    margin-right: 20px;
+    right: 0;
+  }
+  
+  button[class^="seta-topo"] {
+    position: static;
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 40px;
+  }
+  
+  .card-servico {
+    padding: 20px;
+  }
+  
+  .card-servico img {
+    width: 40px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-list li {
+    justify-content: center;
+  }
+  
+  .footer-bottom p {
+    font-size: 12px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cabeçalho {
+    flex-direction: column;
+  }
+  
+  .link-home {
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  #informaçoes {
+    margin-top: 200px;
+  }
+  
+  #info1,
+  #info2,
+  #info3,
+  #info4 {
+    height: auto;
+    padding: 15px 0 15px 10px;
+    margin-top: 100px;
+  }
+}
+
+
