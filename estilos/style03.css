@@ -409,6 +409,7 @@ button {
 
   .contact-list li {
       justify-content: center;
+      margin-right: 55px;
   }
 
   #texto h2{
@@ -641,9 +642,6 @@ button {
     font-size: 17px;
   }
 
-  .seta-topo2{
-    
-  }
   
   
 }

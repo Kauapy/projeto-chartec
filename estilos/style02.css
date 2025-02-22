@@ -11,7 +11,9 @@ body{
 header a{
     color: black;
     text-decoration: none;
-
+}
+.linha{
+    display: none;
 }
 
 .link-home a{
@@ -206,11 +208,27 @@ hr{
 
     .contact-list li {
         justify-content: center;
+        margin-right: 55px;
     }
 
     #texto h2{
         font-size: 18px;
         text-align: center;
+    }
+
+    #titulo h1{
+        text-decoration: none;
+    }
+
+    .linha{
+        border: 1px solid rgba(0, 0, 0, 0.623);
+        margin-top: -30px;
+        width: 180px;
+        display: block
+    }
+
+    #titulo h2{
+        margin-top: 20px;
     }
 }
 
@@ -281,14 +299,21 @@ hr{
 
     .modificador {
         margin-bottom: 20px; 
-        
+        width: 300px;
+        height: 600px;
     }
 
-    body{
+    html{
         overflow-x: hidden;
     }
 }
 
+@media (max-width: 468px) {
+    nav.cabeçalho {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
 
 .fale-conosco{
     display: flex;
