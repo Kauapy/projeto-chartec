@@ -678,4 +678,28 @@ button {
   }
 }
 
+@media (max-width: 796px){
+    .footer-container{
+      margin-top: 4000px;
+    }
 
+    .seta-topo,
+    .seta-topo2,
+    .seta-topo3,
+    .seta-topo4 {
+    display: none !important;
+  }
+
+  #info4{
+    margin-top: 800px;
+  }
+
+  #info1,
+  #info2,
+  #info3,
+  #info4{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
