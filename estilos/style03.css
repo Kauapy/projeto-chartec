@@ -483,6 +483,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  .seta-topo,
+  .seta-topo2,
+  .seta-topo3,
+  .seta-topo4{
+    position: relative;
+    left: 275px;
+  }
+
   header {
     text-align: center;
   }
@@ -523,6 +531,7 @@ button {
     margin-right: 20px;
     right: 0;
   }
+
   
   button[class^="seta-topo"] {
     position: static;
@@ -562,7 +571,7 @@ button {
   }
 
   .footer-container{
-    margin-top: 3500px;
+    margin-top: 4000px;
   }
 }
 
@@ -587,6 +596,13 @@ button {
     height: auto;
     padding: 15px 0 15px 10px;
     margin-top: 100px;
+  }
+
+  #info1,
+  #info2,
+  #info3,
+  #info4{
+    border-left: none !important;
   }
 
   #info1{
@@ -633,7 +649,7 @@ button {
     margin-left: -20px;
     color: white;
     border-left: 4px solid #ffffff;
-    padding-left: 10px;
+    padding-left: 20px;
     height: 40px;
   }
 
@@ -642,8 +658,24 @@ button {
     font-size: 17px;
   }
 
-  
-  
+
+  .seta-topo,
+  .seta-topo2,
+  .seta-topo3,
+  .seta-topo4 {
+    display: none !important;
+  }
+
+  #informaçoes p{
+    position: relative;
+    text-align: center;
+  }
+
+  #informaçoes h1{
+    position: relative;
+    right: 20px;
+    font-weight: bolder; 
+  }
 }
 
 
